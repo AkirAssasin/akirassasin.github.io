@@ -218,12 +218,12 @@ form {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
   font-size: 2.8em;
   letter-spacing: -1px;
-  color: #474747;
+  color: #e9e9e9;
 } 
 
 #main-content h1:before {
-  content: "/";
-  color: #9ddcff;
+  content: "{-[|]->";
+  color: #e9e9e9;
   padding-right: 0.3em;
   margin-left: -0.9em;
 }
@@ -233,11 +233,11 @@ form {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 8px;
-  color: #474747;
+  color: #e9e9e9;
 } 
 #main-content h2:before {
-  content: "//";
-  color: #9ddcff;
+  content: "";
+  color: #e9e9e9;
   padding-right: 0.3em;
   margin-left: -1.5em;
 }
@@ -248,12 +248,12 @@ form {
   font-weight: bold;
   margin-top: 24px;
   margin-bottom: 8px;
-  color: #474747;
+  color: #e9e9e9;
 } 
  
 #main-content h3:before {
-  content: "///";
-  color: #9ddcff;
+  content: "";
+  color: #e9e9e9;
   padding-right: 0.3em;
   margin-left: -2em;
 }
@@ -262,12 +262,12 @@ form {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
   font-size: 15px;
   font-weight: bold;
-  color: #474747;
+  color: #e9e9e9;
 } 
 
 h4:before {
   content: "////";
-  color: #9ddcff;
+  color: #e9e9e9;
   padding-right: 0.3em;
   margin-left: -2.8em;
 }
@@ -275,11 +275,11 @@ h4:before {
 #main-content h5 {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
   font-size: 14px;
-  color: #474747;
+  color: #e9e9e9;
 } 
 h5:before {
   content: "/////";
-  color: #9ddcff;
+  color: #e9e9e9;
   padding-right: 0.3em;
   margin-left: -3.2em;
 }
@@ -287,11 +287,11 @@ h5:before {
 #main-content h6 {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
   font-size: .8em;
-  color: #474747;
+  color: #e9e9e9;
 } 
 h6:before {
   content: "//////";
-  color: #9ddcff;
+  color: #e9e9e9;
   padding-right: 0.3em;
   margin-left: -3.7em;
 }
