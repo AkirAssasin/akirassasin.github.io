@@ -1,3 +1,8 @@
+@font-face {
+    font-family: customFont;
+    src: url(Joystix.ttf);
+  }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -44,7 +49,7 @@ table {
 body {
   font-size: 13px;
   line-height: 1.5; 
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: customFont;
   color: #000;
 }
 
@@ -81,7 +86,7 @@ header h2 {
 }
 
 code, pre {
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
+  font-family: customFont;
   color: #222;
   margin-bottom: 30px;
   font-size: 12px;
