@@ -68,6 +68,8 @@ a:hover {
   color: #2268b2;
 }
 
+
+
 header {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -490,3 +492,22 @@ footer a:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+#animate-area	{ 
+	width: 560px; 
+	height: 400px; 
+	background-image: url(bg-clouds.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 40s linear infinite;
+}
+
+.hover_image {position:relative;}
+.hover_image span{position:absolute; display:none; z-index:99;}
+.hover_image:hover span{display:block;}
