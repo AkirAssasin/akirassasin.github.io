@@ -1,54 +1,80 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <title>Akir&#39;s webpage</title>
-  </head>
-
-  <body>
-    <header>
-      <div class="inner">
-        <h1>~}[-AkirAssasin-]{~</h1>
-        <h2>I am a student who likes to make games!</h2>
-        <h2>They can be found this website.</h2>
-      </div>
-    </header>
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-<h1><a href="http://akirassasin.github.io/darkspin/" class="hover_image"><span><img src="" /></span>Darkrix</h1></a>
-            <h3>A fast-paced game to test your reflexes and waste a few minutes. Best game in this site!</h3>
-            <h3></h3>
-<h2><a href="http://www.ludumdare.com/compo/ludum-dare-30/?action=preview&uid=38616" class="hover_image"><span><img src="" /></span>LD30 Entry</h1></a>
-            <h3>My first game. Complete with bad graphics and weird music</h3>
-            <h3></h3>
-<h2><a href="http://akirassasin.github.io/faction-master/" class="link"><span class="hover_image"><span><img src="" /></span>Faction Master</h1></a>
-            <h3>A text-based game where you lead a faction to victory (or downfall).</h3>
-            <h3></h3>
-
-        </section>
-      </div>
-    </div>
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Darkrix -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:600px;height:300px"
-     data-ad-client="ca-pub-9539461013461837"
-     data-ad-slot="2689494105"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Template Name: PhotoFolio
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>akirassasin</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+<!-- tabs -->
+<script type="text/javascript" src="layout/scripts/jquery.ui.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#tabcontainer").tabs({
+        event: "click"
+    });
+});
 </script>
-    </body>
+<!-- / tabs -->
+<script type="text/javascript" src="layout/scripts/jquery-photostack.js"></script>
+<!-- coinslider -->
+<script type="text/javascript" src="layout/scripts/jquery-coin-slider.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $('#portfolioslider').coinslider({
+        width: 480,
+        height: 280,
+        navigation: false,
+        links: false,
+        hoverPause: true
+    });
+});
+</script>
+<!-- / coinslider -->
+</head>
+<body id="top">
+<div class="wrapper col1">
+  <div id="header" class="clear">
+    <div class="fl_left">
+      <h1><a href="index.html">AkirAssasin</a></h1>
+      <p>Student + game developer</p>
+    </div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col1">
+    <div id="featured_slide"> 
+    <!-- ####################################################################################################### -->
+    <div id="slider">
+      <ul id="categories">
+        <li class="category">
+          <h2 class="bestselling">-= Darkrix =-</h2>
+          <a href="http://akirassasin.github.io/darkspin"><img src="layout/styles/images/darkrix.png" alt="" /></a>
+          <p>Dodge homing cubes in this epic arcade game! Electronic music and colors included.</p>
+        </li>
+        <li class="category">
+          <h2>Faction Master</h2>
+          <a href="http://akirassasin.github.io/faction-master"><img src="images/demo/150x110.gif" alt="" /></a>
+          <p>Lead your faction to victory or epic failure in this strategy game.</p>
+        </li>
+      </ul>
+      <a class="prev disabled"></a> <a class="next disabled"></a>
+      <div style="clear:both"></div>
+    </div>
+    <!-- ####################################################################################################### --> 
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div id="copyright" class="clear">
+    <p class="fl_right">By <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </div>
+</div>
+</body>
 </html>
