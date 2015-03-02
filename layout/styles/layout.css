@@ -124,6 +124,10 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 #column .latestnews p{display:inline;}
 #column .latestnews img{float:left; margin:0 10px 0 0; padding:4px; border:1px solid #C7C5C8; clear:left;}
 
+#disqus_thread {
+    width:70%;
+}
+
 /* ----------------------------------------------Footer------------------------------------- */
 
 #footer{padding:20px 0;}
