@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     // Autoscroll
     $('.jcarousel').jcarouselAutoscroll({
-        autostart: true,
+        autostart: false,
         interval: 1000
     });
 
@@ -20,7 +20,7 @@ $(document).ready(function () {
     $('.jcarousel').jcarousel().jcarouselAutoscroll().hover(function () {
         $(this).jcarouselAutoscroll('stop');
     }, function () {
-        $(this).jcarouselAutoscroll('start');
+        $(this).jcarouselAutoscroll('stop');
     });
 
     // Prev control initialization
