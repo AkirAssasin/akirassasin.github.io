@@ -190,6 +190,7 @@ table tbody tr.dark{}
 #services a:hover, #services a:hover h2{}
 #services a.service{background-position:0 0; background-repeat:no-repeat;}
 #services a.s-1{background-image:url("images/icons/icon-1.png"); background-position:25px 20px;}
+#services a.s-1:hover{background-image:url("images/icons/hicon-1.png"); background-position:25px 20px;}
 #services a.s-2{background-image:url("images/icons/icon-2.png"); background-position:45px 20px;}
 #services a.s-3{background-image:url("images/icons/icon-3.png"); background-position:25px 20px;}
 #services a.s-4{background-image:url("images/icons/icon-4.png"); background-position:25px 20px;}

@@ -24,7 +24,7 @@ File: Slider CSS
 
 #slider_content ul li figure figcaption{display:block; float:left; width:325px; margin:80px 0 0 0; padding:0; overflow:hidden;}
 #slider_content ul li figure figcaption p{margin:0 0 20px 0; padding:0;}
-#slider_content ul li figure figcaption footer{}
+#slider_content ul li figure figcaption footer{color: #F0F0F0;}
 #slider_content ul li figure figcaption footer a{display:inline-block; padding:5px 10px;}
 
 /* ----------------------------------------------Previous & Next Buttons-------------------------------------*/
