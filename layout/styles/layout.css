@@ -180,9 +180,9 @@ table tbody tr.dark{}
 
 #services{display:block; margin: 0; padding:0;}
 #services::after{display:block; visibility:hidden; height:65px; content:"";}
-#services ul, #services img, #services h2, #services p{display:block; margin-left: auto; margin-right: auto; padding:0; list-style:none;}
-#services ul li{display:inline-block; width:225px; margin:0 0 0 20px; padding:0; text-align:center;}
-#services ul li:first-child{margin-left: auto; margin-right: auto;}
+#services ul, #services img, #services h2, #services p{display:block; margin-left: 0; margin-right: 0; padding:0;}
+#services ul li{display:inline-block; width:220px; margin:0 0 0 20px; padding:0; text-align:center;}
+#services ul li:first-child{margin-left: 0; margin-right: 0;}
 #services h2, #services p{display:block; margin-left: auto; margin-right: auto; padding:0;}
 #services h2{margin-bottom:25px;}
 #services a{display:block; padding:160px 20px 20px 20px;}
@@ -192,8 +192,8 @@ table tbody tr.dark{}
 #services a.s-1{background-image:url("images/icons/icon-1.png"); background-position:25px 20px;}
 #services a.s-1:hover{background-image:url("images/icons/hicon-1.png"); background-position:25px 20px;}
 #services a.s-2{background-image:url("images/icons/icon-2.png"); background-position:45px 20px;}
-#services a.s-3{background-image:url("images/icons/icon-3.png"); background-position:25px 20px;}
-#services a.s-4{background-image:url("images/icons/icon-4.png"); background-position:25px 20px;}
+#services a.s-3{background-image:url("images/icons/icon-3.png"); background-position:50px 20px;}
+#services a.s-4{background-image:url("images/icons/icon-4.png"); background-position:40px 20px;}
 
 
 /* Group CSS3 Attributes
