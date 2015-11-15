@@ -18,7 +18,7 @@ File: Layout CSS
 .row1{border-top:5px solid;}
 .row2, .row2 a{}
 .row3{border-bottom:1px solid;}
-.row4{border-top:1px solid;}
+.row4{}
 
 
 /* Header
@@ -30,6 +30,7 @@ File: Layout CSS
 #header #logo h1, #header #logo p{font-weight:normal; font-style:normal; text-transform:none;}
 #header #logo h1{font-size:28px; line-height:22px;}
 #header #logo p{margin:0; padding:0; font-size:11px;}
+#header #logo a{color:white;}
 
 
 /* Content Area
@@ -86,6 +87,7 @@ File: Layout CSS
 ---------------------------------------------------------------------------------------------------------------*/
 #copyright{padding:20px 0;}
 #copyright p{margin:0; padding: 0;}
+#copyright a{color:white;}
 
 
 /*-------------------------------------------------------------------------------------------------------------*/
@@ -192,8 +194,8 @@ table tbody tr.dark{}
 #services a.s-1{background-image:url("images/icons/icon-1.png"); background-position:25px 20px;}
 #services a.s-1:hover{background-image:url("images/icons/hicon-1.png"); background-position:25px 20px;}
 #services a.s-2{background-image:url("images/icons/icon-2.png"); background-position:45px 20px;}
-#services a.s-3{background-image:url("images/icons/icon-3.png"); background-position:50px 20px;}
-#services a.s-4{background-image:url("images/icons/icon-4.png"); background-position:40px 20px;}
+#services a.s-2:hover{background-image:url("images/icons/hicon-2.png"); background-position:45px 20px;}
+#services a.t{display:block; padding:45px 20px 20px 20px; width:440px; margin:0 0 0 20px;}
 
 
 /* Group CSS3 Attributes
