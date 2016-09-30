@@ -27,6 +27,21 @@ $(function() {
     });
 });
 
+$(document).ready(function(){
+  $('.animated-img').each(function(){
+    var $el = $(this),
+      staticSrc = $el.attr('src'),
+      gifSrc = $el.data('gifSrc');
+    $el.hover(
+      function(){
+        $(this).attr("src", gifSrc);
+      },
+      function(){
+        $(this).attr("src", staticSrc);
+      });
+  });
+});
+
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     $(this).closest('.collapse').collapse('toggle');
