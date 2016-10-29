@@ -9,6 +9,19 @@ body {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
   background-color: black;
+  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+
+root:before {
+  content: url(img/Balance.gif)
+           url(img/Boids.gif)
+           url(img/Crowd.gif)
+           url(img/Cyclopi.gif)
+           url(img/Hypertension.gif)
+           url(img/NAVIGATOR.gif)
+           url(img/NOGUE.gif)
+           url(img/ringing.gif);
+  display: none;
 }
 
 html {
@@ -330,22 +343,4 @@ img::-moz-selection {
 
 img { 
    border:2px solid white;
-}
-
-body {
-  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
-}
-
-body:before {
-  content: url(img/Balance.gif)
-           url(img/Boids.gif)
-           url(img/Crowd.gif)
-           url(img/Cyclopi.gif)
-           url(img/Hypertension.gif)
-           url(img/NAVIGATOR.gif)
-           url(img/NOGUE.gif)
-           url(img/ringing.gif);
-  visibility: hidden;
-  position: absolute;
-  left: -999em;
 }
