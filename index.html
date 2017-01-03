@@ -19,6 +19,9 @@
 
         <!-- Grayscale CSS --> 
         <link href="css/grayscale.css" rel="stylesheet">
+        
+        <!-- Magnific CSS -->
+        <link href="css/magnific-popup.css" rel="stylesheet">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -96,7 +99,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <p>Tick, tock. work in progress.</p>
+                        <p>These are not everything, but they're the better ones.</p>
                     </div>
                 </div>
             </div>
@@ -104,66 +107,172 @@
 
         <!-- Projects Section -->
         <section id="projects" class="container content-section text-center">
-            <!-- .row -->
+            <!---------------------------------- ONE ROW ------------------------------------>
             <div class="row">
+                <!------------------------ ONE ITEM --------------------->
                 <div class="col-md-6 portfolio-item">
-                    <a href="http://akirassasin.github.io/nogue" target="_blank">
-                        <img class="img-responsive animated-img" src="img/NOGUE.png" data-gif-src="img/NOGUE.gif">
-                        <p>NOGUE</p>
-                        <p class="description">procedural dodge-em-all</p>
-                    </a>
+                    <!-- STATIC IMAGE -->
+                    <a href="#nogue-popup" class="popup-info"><img class="img-responsive add-gap-below" src="img/NOGUE.png"></a>
+                    <!-- POP UP -->
+                    <div id="nogue-popup" class="container dark-popup mfp-hide">
+                        <!-- GIF -->
+                        <div class="col-md-6 portfolio-item"><img class="img-responsive" src="img/NOGUE.gif"></div>
+                        <!-- INFO and PLAY -->
+                        <div class="col-md-6 portfolio-item">
+                            <p>NOGUE</p>
+                            <p class="description">Bullet hellish dodge-em-all. Bullet patterns are procedurally generated.</p>
+                            <p class="description">My first venture into Unity resulted in this game. I've been prototyping a few more like it, optimized and with less hacky code. They will come...</p>
+                            <p class="description">... Soon&trade;.</p>
+                            <a href="http://akirassasin.github.io/nogue" target="_blank" class="btn btn-default btn-lg"><span class="network-name">PLAY GAME</span></a>
+                        </div>
+                    </div>
                 </div>
+                <!------------------------ ITEM END --------------------->
+                <!------------------------ ONE ITEM --------------------->
                 <div class="col-md-6 portfolio-item">
-                    <a href="https://akirassasin.github.io/crowds/" target="_blank">
-                        <img class="img-responsive animated-img" src="img/Crowd.png" data-gif-src="img/Crowd.gif">
-                        <p>Crowd</p>
-                        <p class="description">deathmatch game where you stomp on enemies</p>
-                    </a>
+                    <!-- STATIC IMAGE -->
+                    <a href="#crowd-popup" class="popup-info"><img class="img-responsive add-gap-below" src="img/Crowd.png"></a>
+                    <!-- POP UP -->
+                    <div id="crowd-popup" class="container dark-popup mfp-hide">
+                        <!-- GIF -->
+                        <div class="col-md-6 portfolio-item"><img class="img-responsive" src="img/Crowd.gif"></div>
+                        <!-- INFO and PLAY -->
+                        <div class="col-md-6 portfolio-item">
+                            <p>Crowd</p>
+                            <p class="description">Deathmatch game where you stomp on enemies. First to get 10 kills wins.</p>
+                            <p class="description">You can jump twice, and you regain your jumps after collision with something.</p>
+                            <p class="description">Initially an experiment on 2D collision.</p>
+                            <a href="http://akirassasin.github.io/crowds/" target="_blank" class="btn btn-default btn-lg"><span class="network-name">PLAY GAME</span></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 portfolio-item">
-                    <a href="http://akirassasin.github.io/homepage/" target="_blank">
-                        <img class="img-responsive animated-img" src="img/Balance.png" data-gif-src="img/Balance.gif">
-                        <p>BALANCE</p>
-                        <p class="description">interactive screensaver</p>
-                    </a>
-                </div>
-                <div class="col-md-6 portfolio-item">
-                    <a href="https://akirassasin.itch.io/navigator" target="_blank">
-                        <img class="img-responsive animated-img" src="img/NAVIGATOR.png" data-gif-src="img/NAVIGATOR.gif">
-                        <p>NAVIGATOR</p>
-                        <p class="description">guide sea traffic</p>
-                    </a>
-                </div>
-                <div class="col-md-6 portfolio-item">
-                    <a href="https://akirassasin.itch.io/cyclopi" target="_blank">
-                        <img class="img-responsive animated-img" src="img/Cyclopi.png" data-gif-src="img/Cyclopi.gif">
-                        <p>Cyclopi</p>
-                        <p class="description">take care of mysterious beings with mysterious needs</p>
-                    </a>
-                </div>
-                <div class="col-md-6 portfolio-item">
-                    <a href="http://akirassasin.itch.io/hypertension" target="_blank">
-                        <img class="img-responsive animated-img" src="img/Hypertension.png" data-gif-src="img/Hypertension.gif">
-                        <p>Hypertension</p>
-                        <p class="description">minesweeper-esque, indentify all the white nodes</p>
-                    </a>
-                </div>
-                <div class="col-md-6 portfolio-item">
-                    <a href="http://akirassasin.github.io/boids" target="_blank">
-                        <img class="img-responsive animated-img" src="img/Boids.png" data-gif-src="img/Boids.gif">
-                        <p>boids</p>
-                        <p class="description">each individual has different preferences to flocking and can influence others</p>
-                    </a>
-                </div>
-                <div class="col-md-6 portfolio-item">
-                    <!--<a href="http://akirassasin.github.io/boids" target="_blank">-->
-                        <img class="img-responsive animated-img" src="img/ringing.png" data-gif-src="img/ringing.gif">
-                        <p>ringing</p>
-                        <p class="description">work in progress, currently a walking simulator</p>
-                    <!--</a>-->
-                </div>
+                <!------------------------ ITEM END --------------------->
             </div>
-            <!-- /.row -->
+            <!---------------------------------- ROW END ------------------------------------>
+            <!---------------------------------- ONE ROW ------------------------------------>
+            <div class="row">
+                <!------------------------ ONE ITEM --------------------->
+                <div class="col-md-6 portfolio-item">
+                    <!-- STATIC IMAGE -->
+                    <a href="#balance-popup" class="popup-info"><img class="img-responsive add-gap-below" src="img/Balance.png"></a>
+                    <!-- POP UP -->
+                    <div id="balance-popup" class="container dark-popup mfp-hide">
+                        <!-- GIF -->
+                        <div class="col-md-6 portfolio-item"><img class="img-responsive" src="img/Balance.gif"></div>
+                        <!-- INFO and PLAY -->
+                        <div class="col-md-6 portfolio-item">
+                            <p>Balance</p>
+                            <p class="description">I'm not actually quite sure on what this is... it's like a self-playing relaxing Agar.io.</p>
+                            <p class="description">You can drag to plop more cells into it.</p>
+                            <a href="http://akirassasin.github.io/homepage/" target="_blank" class="btn btn-default btn-lg"><span class="network-name">PLAY GAME</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------ ITEM END --------------------->
+                <!------------------------ ONE ITEM --------------------->
+                <div class="col-md-6 portfolio-item">
+                    <!-- STATIC IMAGE -->
+                    <a href="#navi-popup" class="popup-info"><img class="img-responsive add-gap-below" src="img/NAVIGATOR.png"></a>
+                    <!-- POP UP -->
+                    <div id="navi-popup" class="container dark-popup mfp-hide">
+                        <!-- GIF -->
+                        <div class="col-md-6 portfolio-item"><img class="img-responsive" src="img/NAVIGATOR.gif"></div>
+                        <!-- INFO and PLAY -->
+                        <div class="col-md-6 portfolio-item">
+                            <p>NAVIGATOR</p>
+                            <p class="description">In the mists of the Sea, ship captains perform their ritual of offering to you.</p>
+                            <p class="description">Guide them safely through the mist and traffic! You are their only hope...</p>
+                            <p class="description">Global Game Jam 2016</p>
+                            <a href="http://akirassasin.github.io/crowds/" target="_blank" class="btn btn-default btn-lg"><span class="network-name">PLAY GAME</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------ ITEM END --------------------->
+            </div>
+            <!---------------------------------- ROW END ------------------------------------>
+            <!---------------------------------- ONE ROW ------------------------------------>
+            <div class="row">
+                <!------------------------ ONE ITEM --------------------->
+                <div class="col-md-6 portfolio-item">
+                    <!-- STATIC IMAGE -->
+                    <a href="#cyclopi-popup" class="popup-info"><img class="img-responsive add-gap-below" src="img/Cyclopi.png"></a>
+                    <!-- POP UP -->
+                    <div id="cyclopi-popup" class="container dark-popup mfp-hide">
+                        <!-- GIF -->
+                        <div class="col-md-6 portfolio-item"><img class="img-responsive" src="img/Cyclopi.gif"></div>
+                        <!-- INFO and PLAY -->
+                        <div class="col-md-6 portfolio-item">
+                            <p>Cyclopi</p>
+                            <p class="description">Like Tamagotchi, but with crawling one-eyed things.</p>
+                            <p class="description">The creatures have a unique set of simple behaviours. Their movements and eyes are my favourite part of the game-thing.</p>
+                            <p class="description">Ludum Dare Compo 34</p>
+                            <a href="https://akirassasin.itch.io/cyclopi" target="_blank" class="btn btn-default btn-lg"><span class="network-name">PLAY GAME</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------ ITEM END --------------------->
+                <!------------------------ ONE ITEM --------------------->
+                <div class="col-md-6 portfolio-item">
+                    <!-- STATIC IMAGE -->
+                    <a href="#hypertension-popup" class="popup-info"><img class="img-responsive add-gap-below" src="img/Hypertension.png"></a>
+                    <!-- POP UP -->
+                    <div id="hypertension-popup" class="container dark-popup mfp-hide">
+                        <!-- GIF -->
+                        <div class="col-md-6 portfolio-item"><img class="img-responsive" src="img/Hypertension.gif"></div>
+                        <!-- INFO and PLAY -->
+                        <div class="col-md-6 portfolio-item">
+                            <p>Hypertension</p>
+                            <p class="description">Minesweeper-like game. You'll have to identify all the white nodes by observing and changing the connected lines. Lines turn white if the nodes have the same colour.</p>
+                            <p class="description">A Game By Its Cover Jam 2016</p>
+                            <p class="description">Based on Famicase by Castle magazine / Play without constraint</p>
+                            <a href="http://akirassasin.itch.io/hypertension" target="_blank" class="btn btn-default btn-lg"><span class="network-name">PLAY GAME</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------ ITEM END --------------------->
+            </div>
+            <!---------------------------------- ROW END ------------------------------------>
+            <!---------------------------------- ONE ROW ------------------------------------>
+            <div class="row">
+                <!------------------------ ONE ITEM --------------------->
+                <div class="col-md-6 portfolio-item">
+                    <!-- STATIC IMAGE -->
+                    <a href="#boids-popup" class="popup-info"><img class="img-responsive add-gap-below" src="img/Boids.png"></a>
+                    <!-- POP UP -->
+                    <div id="boids-popup" class="container dark-popup mfp-hide">
+                        <!-- GIF -->
+                        <div class="col-md-6 portfolio-item"><img class="img-responsive" src="img/Boids.gif"></div>
+                        <!-- INFO and PLAY -->
+                        <div class="col-md-6 portfolio-item">
+                            <p>Boids</p>
+                            <p class="description">Flocking experiment.</p>
+                            <p class="description">The RGB values represent the weight of separation (R), cohesion (G), and alignment (B).</p>
+                            <p class="description">Colours lerp when in close proximity.</p>
+                            <a href="http://akirassasin.github.io/boids" target="_blank" class="btn btn-default btn-lg"><span class="network-name">PLAY GAME</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------ ITEM END --------------------->
+                <!------------------------ ONE ITEM --------------------->
+                <div class="col-md-6 portfolio-item">
+                    <!-- STATIC IMAGE -->
+                    <a href="#ringing-popup" class="popup-info"><img class="img-responsive add-gap-below" src="img/ringing.png"></a>
+                    <!-- POP UP -->
+                    <div id="ringing-popup" class="container dark-popup mfp-hide">
+                        <!-- GIF -->
+                        <div class="col-md-6 portfolio-item"><img class="img-responsive" src="img/ringing.gif"></div>
+                        <!-- INFO and PLAY -->
+                        <div class="col-md-6 portfolio-item">
+                            <p>ringing</p>
+                            <p class="description">Dark Echo inspired game. Right now it's just aesthetics, with an empty space full of boxes and boulders that can be pushed around.</p>
+                            <p class="description">I don't know if I can finish this. Hopefully I can...</p>
+                            <!--<a href="http://akirassasin.itch.io/hypertension" target="_blank" class="btn btn-default btn-lg"><span class="network-name">PLAY GAME</span></a>-->
+                        </div>
+                    </div>
+                </div>
+                <!------------------------ ITEM END --------------------->
+            </div>
+            <!---------------------------------- ROW END ------------------------------------>
         </section>
         <hr>
         <!-- Footer -->
@@ -183,5 +292,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <!-- Grayscale --> 
     <script src="js/grayscale.js"></script>
+    <!-- Magnific -->
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/magnific-init.js"></script>
     
 </html>
