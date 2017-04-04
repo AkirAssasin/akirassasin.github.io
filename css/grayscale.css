@@ -3,12 +3,23 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+
+:root {
+    --main-font: lato, Arial, sans-serif;
+    --link-color: #7fa9c2;
+    --link-hover-color: #ccdce6;
+    --normal-color: #e5edf2;
+    --faded-color: #b2cbda;
+    --dark-color: #001827;
+    --darker-color: #00101a;
+}
+
 body {
   width: 100%;
   height: 100%;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-  background-color: black;
+  color: var(--normal-color);
+  background-color: var(--darker-color);
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -26,6 +37,7 @@ html {
 }
 
 @media not screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /*
     :root:before {
         content: url(img/Balance.gif)
            url(img/Boids.gif)
@@ -39,6 +51,7 @@ html {
         position: absolute;
         left: -999em;
     }
+    */
 }
 
 div#preload {display: none;}
@@ -79,7 +92,7 @@ p {
   }
 }
 a {
-  color: white;
+  color: var(--link-color);
   font-weight: 400;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-transition: all 0.2s ease-in-out;
@@ -90,7 +103,7 @@ a:hover,
 a:focus {
   text-decoration: none;
   color: grey;
-    border-color: white;
+    border-color: var(--link-hover-color);
     border: 10px;
 }
 
@@ -102,10 +115,10 @@ a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: black;
+  background-color: var(--dark-color);
 }
 .navbar-custom .navbar-toggle {
-  color: white;
+  color: var(--normal-color);
   background-color: rgba(255, 255, 255, 0.2);
   font-size: 12px;
 }
@@ -120,7 +133,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom a {
-  color: white;
+  color: var(--link-color);
 }
 .navbar-custom .nav li a {
   -webkit-transition: background 0.3s ease-in-out;
@@ -128,7 +141,7 @@ a:focus {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--link-hover-color);
   outline: none;
   background-color: transparent;
 }
@@ -144,11 +157,11 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--normal-color);
 }
 
 .navbar-custom .nav li.active a:hover {
-  color: white;
+  color: var(--link-hover-color);
 }
 
 @media (min-width: 768px) {
@@ -163,23 +176,25 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: black;
+    background: var(--dark-color);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
 
+/* background: url(../img/intro-bg.png) no-repeat bottom center scroll; */
+
 .intro {
-  display: table;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  color: white;
-  background: url(../img/intro-bg.png) no-repeat bottom center scroll;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+    display: table;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    text-align: center;
+    color: var(--normal-color);
+    background-color: transparent;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 .intro .intro-body {
@@ -197,7 +212,7 @@ a:focus {
 
 @media (min-width: 768px) {
   .intro {
-    height: 100%;
+    /*height: 50%;*/
     padding: 0;
   }
   .intro .intro-body .brand-heading {
@@ -212,10 +227,10 @@ a:focus {
   height: 70px;
   margin: 15px;
   padding: 7px 16px;
-  border: 2px solid white;
+  border: 2px solid var(--normal-color);
   border-radius: 100% !important;
   font-size: 40px;
-  color: white;
+  color: var(--normal-color);
   background: transparent;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
@@ -224,8 +239,8 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
   outline: none;
-  color: black;
-  background: white;
+  color: var(--link-hover-color);
+  background: var(--normal-color);
 }
 .btn-circle i.animated {
   -webkit-transition-property: -webkit-transform;
@@ -287,17 +302,17 @@ a:focus {
 }
 
 .btn-default {
-  border: 1px solid white;
-  color: white;
+  border: 1px solid var(--link-color);
+  color: var(--link-color);
   background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid white;
+  border: 1px solid var(--link-hover-color);
   outline: none;
-  color: black;
-  background-color: white;
+  color: var(--dark-color);
+  background-color: var(--link-hover-color);
 }
 
 ul.banner-social-buttons {
@@ -350,5 +365,25 @@ img::-moz-selection {
 }
 
 img { 
-   border:2px solid white;
+   border: 2px solid var(--normal-color);
+}
+
+a img { 
+   border: 2px solid var(--link-color);
+}
+
+a img:hover { 
+   border: 2px solid var(--link-hover-color);
+}
+
+/*
+MAGNIFIC POP-UP CSS
+*/
+
+.dark-popup {
+  position: relative;
+  background: var(--dark-color);
+  padding: 20px;
+  width:90%;
+  margin: 20px auto;
 }
