@@ -220,7 +220,8 @@ a:focus {
 @media (min-width: 768px) {
   .intro {
     /*height: 50%;*/
-    padding: 0;
+    /*padding: 0;*/
+    padding: 60px 60px;
   }
   .intro .intro-body .brand-heading {
     font-size: 100px;
@@ -371,15 +372,15 @@ img::-moz-selection {
   background: transparent;
 }
 
-img { 
+img {
    border: 2px solid var(--normal-color);
 }
 
-a img { 
+a img {
    border: 2px solid var(--link-color);
 }
 
-a img:hover { 
+a img:hover {
    border: 2px solid var(--link-hover-color);
 }
 
