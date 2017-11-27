@@ -1,221 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-    <head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>akirassasin</title>
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-        <title>akirassasin</title>
+    <style type="text/css">
 
-        <!-- FontAwesome -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      body {
+        /* Font */
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        color: #444444;
+        /* Spacing */
+        padding: 0 10px;
+        margin: 40px auto;
+        max-width: 650px;
+        line-height: 1.6;
+        /* Background */
+        background-color: #EEEEE0;
+      }
 
-        <!-- Bootstrap CSS -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      h1, h2, h3 {
+        line-height: 1.2;
+      }
 
-        <!-- Grayscale CSS -->
-        <link href="css/grayscale.css" rel="stylesheet">
+      img {
+        display: block;
+        width: 80%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        border: 5px solid #CCCCC0;
+        border-radius: 3px;
+      }
 
-        <!-- Magnific CSS -->
-        <link href="css/magnific-popup.css" rel="stylesheet">
+      .container {
+        background-color: #DDDDD0;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 5px 0;
+        border-radius: 3px;
+        text-align: center;
+      }
 
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+      .label {
+        font-style: italic;
+        color: #555555;
+      }
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+      .center {
+        text-align: center;
+      }
 
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    </style>
 
-            ga('create', 'UA-97398334-2', 'auto');
-            ga('send', 'pageview');
-        </script>
+  </head>
 
-    </head>
+  <body>
 
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <header>
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        Menu <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">
-                        <span class="light">akirassasin</span>
-                    </a>
-                </div>
+      <h1>akirassasin</h1>
+      <aside>
+        <a href="https://akirassasin.itch.io">itch.io</a> |
+        <a href="https://twitter.com/akirassasin_dev">twitter</a> |
+        <a href="https://github.com/AkirAssasin">github</a>
+      </aside>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- Hidden li included to remove active class from projects link when scrolled up past projects section -->
-                        <li>
-                            <a class="page-scroll" href="https://akirassasin.itch.io">ITCH.IO</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
-        </nav>
+      <p><strong>A collection of games and toys I had worked on - a portfolio of sorts.</strong>
+      <br>
+      These are the cream of the crop, you can find the rest on itch.io or github.</p>
 
-        <!-- Intro Header -->
-        <header class="intro">
-            <div class="intro-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <ul class="list-inline banner-social-buttons">
-                                <li>
-                                    <a href="#projects">
-                                        <i><p class="mobile-only">akirassasin</p></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://akirassasin.itch.io" class="btn btn-default btn-lg"><i class="fa fa-shopping-bag fa-fw"></i> <span class="network-name">Itch.io</span></a>
-                                </li>
-                                <li>
-                                <a href="#projects">
-                                    <i><img class="mobile-hide" style="border-style: none; margin: 0px 50px;" src="img/icon.png"></i>
-                                </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/AkirAssasin" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+    </header>
 
-        <!-- Projects Section -->
-        <section class="container content-section">
-            <!---------------------------------- ONE ITEM ------------------------------------>
-            <div class="row row-colored">
-                <!-- STATIC IMAGE -->
-                <div class="col-md-6 portfolio-item"><img class="img-responsive add-gap-below" src="img/DIE.gif"></div>
-                <!-- DESCRIPTION -->
-                <div class="col-md-6 portfolio-item">
-                   <p>@'S DIE</p>
-                    <p class="description">Semi-deterministic casual roguelike. Sieze your chance...</p>
-                    <p class="description">First time making a roguelike using Unity. I thought of merging deterministic and traditional roguelikes together, by using dice to convey "luck". Themes and enemy modifiers for each dungeon are procedurally generated. Enemy modifiers change things from speed to chances to roll a number, resulting in interesting switch of pace every dungeon.</p>
-                    <p class="description">7 Day Roguelike Challenge 2017</p>
-                    <a href="https://akirassasin.itch.io/as-die-rl" target="_blank" class="btn btn-default btn-lg"><span class="network-name">PLAY GAME</span></a>
-                </div>
-            </div>
-            <!---------------------------------- ITEM END ------------------------------------>
-            <!---------------------------------- ONE ITEM ------------------------------------>
-            <div class="row row-colored">
-                <div class="col-md-6 portfolio-item">
-                    <!-- STATIC IMAGE -->
-                    <img class="img-responsive add-gap-below" src="img/NOGUE.gif">
-                </div>
-                <div class="col-md-6 portfolio-item">
-                    <!-- STATIC IMAGE -->
-                    <p>NOGUE</p>
-                    <p class="description">Bullet hellish dodge-em-all. Bullet patterns are procedurally generated.</p>
-                    <p class="description">My first venture into Unity resulted in this game. I've been prototyping a few more like it, optimized and with less hacky code.</p>
-                    <a href="http://akirassasin.github.io/nogue" target="_blank" class="btn btn-default btn-lg"><span class="network-name">PLAY GAME</span></a>
-                </div>
-            </div>
-            <!---------------------------------- ITEM END ------------------------------------>
-            <!---------------------------------- ONE ITEM ------------------------------------>
-            <div class="row row-colored">
-                <!-- STATIC IMAGE -->
-                <div class="col-md-6 portfolio-item"><img class="img-responsive add-gap-below" src="img/diamondicon.gif"></div>
-                <!-- DESCRIPTION -->
-                <div class="col-md-6 portfolio-item">
-                   <p>⃟</p>
-                    <p class="description">A text-less clicker strategy hybrid.</p>
-                    <p class="description">This project was an experiment into wordless tutorials, and giving another try to using GL Lines to programmatically draw the game scene. I also used it as a warm-up session for the upcoming Ludum Dare.</p>
-                    <p class="description">These mechanics proved to be difficult to flesh out. While the game might be aesthetically pleasing (especially the transitions), it is simply not fun to play.</p>
-                    <p class="description">1 Bit Clicker Jam</p>
-                    <a href="https://akirassasin.itch.io/diamondicon" target="_blank" class="btn btn-default btn-lg"><span class="network-name">PLAY GAME</span></a>
-                </div>
-            </div>
-            <!---------------------------------- ITEM END ------------------------------------>
-            <!---------------------------------- ONE ITEM ------------------------------------>
-            <div class="row row-colored">
-                <div class="col-md-6 portfolio-item">
-                    <!-- STATIC IMAGE -->
-                    <img class="img-responsive add-gap-below" src="img/Balance.gif">
-                </div>
-                <div class="col-md-6 portfolio-item">
-                    <!-- STATIC IMAGE -->
-                    <p>Balance</p>
-                    <p class="description">I'm not actually quite sure on what this is... it's like a self-playing relaxing Agar.io.</p>
-                    <p class="description">You can drag to plop more cells into it.</p>
-                    <a href="http://akirassasin.github.io/homepage/" target="_blank" class="btn btn-default btn-lg"><span class="network-name">PLAY GAME</span></a>
-                </div>
-            </div>
-            <!---------------------------------- ITEM END ------------------------------------>
-            <!---------------------------------- ONE ITEM ------------------------------------>
-            <div class="row row-colored">
-                <div class="col-md-6 portfolio-item">
-                    <!-- STATIC IMAGE -->
-                    <img class="img-responsive add-gap-below" src="img/Cyclopi.gif">
-                </div>
-                <div class="col-md-6 portfolio-item">
-                    <!-- STATIC IMAGE -->
-                    <p>Cyclopi</p>
-                    <p class="description">Like Tamagotchi, but with crawling one-eyed things.</p>
-                    <p class="description">The creatures have a unique set of simple behaviours. Their movements and eyes are my favourite part of the game-thing.</p>
-                    <p class="description">Ludum Dare Compo 34</p>
-                    <a href="https://akirassasin.itch.io/cyclopi" target="_blank" class="btn btn-default btn-lg"><span class="network-name">PLAY GAME</span></a>
-                </div>
-            </div>
-            <!---------------------------------- ITEM END ------------------------------------>
-            <!---------------------------------- ONE ITEM ------------------------------------>
-            <div class="row row-colored">
-                <div class="col-md-6 portfolio-item">
-                    <!-- STATIC IMAGE -->
-                    <img class="img-responsive add-gap-below" src="img/NAVIGATOR.gif">
-                </div>
-                        <!-- INFO and PLAY -->
-                <div class="col-md-6 portfolio-item">
-                    <p>NAVIGATOR</p>
-                    <p class="description">In the mists of the Sea, ship captains perform their ritual of offering to you.</p>
-                    <p class="description">Guide them safely through the mist and traffic! You are their only hope...</p>
-                    <p class="description">Global Game Jam 2016</p>
-                    <a href="http://akirassasin.github.io/crowds/" target="_blank" class="btn btn-default btn-lg"><span class="network-name">PLAY GAME</span></a>
-                </div>
-            </div>
-            <!---------------------------------- ITEM END ------------------------------------>
-        </section>
-        <hr>
-        <!-- Footer -->
-        <footer>
-            <div class="container text-center">
-                <p class="description">modified version of <a href="http://startbootstrap.com/template-overviews/grayscale/" target="_blank">grayscale</a>
-            </div>
-        </footer>
+    <!-- Paragraph Begin -->
+    <div class="container">
+      <h2 class="center">Waker</h2>
+      <img src="img/Waker.gif">
 
-    </body>
+      <p>Reinventing bullet hell with distinct line-art graphics and procedurally generated levels.</p>
+      <p></p>
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!-- jQuery Easing -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <!-- Grayscale -->
-    <script src="js/grayscale.js"></script>
-    <!-- Magnific -->
-    <script src="js/magnific-popup.js"></script>
-    <script src="js/magnific-init.js"></script>
+      <p><a href="https://akirassasin.itch.io/waker" target="_blank">Buy the game</a> ($3.00, itch.io)</p>
+      <p><a href="https://akirassasin.github.io/waker-cgajam" target="_blank">Try the demo</a> (Web)</p>
 
+      <p class="label">Originally made for CGA Jam, 2017</p>
+
+    </div>
+    <!-- Paragraph End -->
+
+    <!-- Paragraph Begin -->
+    <div class="container">
+      <h2 class="center">@'s Die</h2>
+      <img src="img/Die.gif">
+
+      <p>Every step means a roll of your die. High numbers beat low numbers - sieze your chance when the time is right.</p>
+
+      <p><a href="https://akirassasin.itch.io/as-die-rl" target="_blank">Play the game</a> (itch.io)</p>
+
+      <p class="label">Originally made for 7 Day Roguelike Challenge, 2017</p>
+
+    </div>
+    <!-- Paragraph End -->
+
+    <!-- Paragraph Begin -->
+    <div class="container">
+      <h2 class="center">⃟</h2>
+      <img src="img/diamondicon.gif">
+
+      <p>loops can be clicked on / interface has to be powered / disruption</p>
+
+      <p><a href="https://akirassasin.itch.io/diamondicon" target="_blank">Play the game</a> (itch.io)</p>
+
+      <p class="label">Originally made for 1-Bit Clicker Jam, 2017</p>
+
+    </div>
+    <!-- Paragraph End -->
+
+    <!-- Paragraph Begin -->
+    <div class="container">
+      <h2 class="center">CREEP</h2>
+      <img src="img/CREEP.gif">
+
+      <p>Legends say that by crushing the Shard and swallowing it, any undead will be free from the eternal hunger for power.</p>
+
+      <p><a href="https://akirassasin.itch.io/creep" target="_blank">Play the game</a> (itch.io)</p>
+
+      <p class="label">Originally made for LD 39 Compo "Running Out Of Power", 2017</p>
+
+    </div>
+    <!-- Paragraph End -->
+
+    <!-- Paragraph Begin -->
+    <div class="container">
+      <h2 class="center">Of Hope and Chakrams</h2>
+      <img src="img/Chakrams.gif">
+
+      <p>An experiment on sprite tiling, pixel art, dungeon generation and camera systems.</p>
+
+      <p><a href="https://akirassasin.itch.io/ggo17" target="_blank">Play the game or download source</a> (itch.io)</p>
+
+      <p class="label">Originally made for Github Game Off "Throwback", 2017</p>
+
+    </div>
+    <!-- Paragraph End -->
+
+    <!-- Paragraph Begin -->
+    <div class="container">
+      <h2 class="center">Rium</h2>
+      <img src="img/Rium.gif">
+
+      <p>An experiment on using emergent systems (flocking) to generate music.</p>
+
+      <p><a href="https://akirassasin.itch.io/rium" target="_blank">Play the game</a> (itch.io)</p>
+
+      <p class="label">Originally made for Music Game Jam, 2017</p>
+
+    </div>
+    <!-- Paragraph End -->
+
+
+    <hr>
+
+    <p>This site is inspired by <a href="http://bettermotherfuckingwebsite.com">this amazing eye-opener</a>.</p>
+
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-97398334-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+
+  </body>
 </html>
