@@ -34,33 +34,18 @@ p {
     /* take up one viewport's worth of space */
     width: 100%;
     height: 100vh;
+
+    /* flex box - side-by-side */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .landing-element {
 
-    /* take up half width */
-    width: 50%;
-    height: 100%;
-
     /* padding */
     padding: 0.5em 2em;
-    box-sizing: border-box;
-
-    /* side by side */
-    float: left;
-
-    /* flex box */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.landing-element.left {
-    justify-content: flex-end;
-}
-
-.landing-element.right {
-    justify-content: flex-start;
 }
 
 .landing-logo {
@@ -77,17 +62,11 @@ p {
 /* mobile changes */
 @media (max-width: 600px) {
 
-    .landing-element {
+    .landing {
         
-        /* stacked on each other */
-        width: 100%;
-        height: 50%;
+        /* flex box - stacked vertically */
         flex-direction: column;
-    }
-
-    /*
-    .landing-element.left, .landing-element.right.right {
+        align-items: center;
         justify-content: center;
     }
-    */
 }
