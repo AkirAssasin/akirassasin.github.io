@@ -1,9 +1,24 @@
+:root {
+
+    /* color constants */
+    --body-color: #444444;
+    --background-color: #eeeeee;
+    --nav-bar-color: #eeeeeeee;
+    --link-color: #3c7fcd;
+
+    /* font size constants */
+    --body-size: 18px;
+
+    /* nav bar size constant */
+    --nav-bar-height: 2.5em;
+}
+
 body {
-    /* Font */
+    
+    /* font */
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    color: #444444;
-    text-align: center;
+    font-size: var(--body-size);
+    color: var(--body-color);
     
     padding: 0px;
     margin: 0px;
@@ -16,7 +31,7 @@ body {
     line-height: 1.6;
     
     /* Background */
-    background-color: #eeeeee;
+    background-color: var(--background-color);
 
     height: 100%;
 }
@@ -29,11 +44,21 @@ p {
     line-height: 1.2;
 }
 
-.landing {
+.viewporter {
 
     /* take up one viewport's worth of space */
     width: 100%;
     height: 100vh;
+
+    /* bottom border */
+    border-bottom: 1px solid var(--body-color);
+}
+
+.landing {
+
+    /* don't overlap with nav-bar when scrolled to top */
+    padding-top: var(--nav-bar-height);
+    box-sizing: border-box;
 
     /* flex box - side-by-side */
     display: flex;
@@ -46,6 +71,14 @@ p {
 
     /* padding */
     padding: 0.5em 2em;
+
+    /* flex size - always take up half */
+    flex: 0 1 50%;
+    min-width: 0;
+    min-height: 0;
+
+    /* but don't become too big */
+    max-width: 20em;
 }
 
 .landing-logo {
@@ -54,9 +87,59 @@ p {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
 
-    /* don't become too big */
-    max-width: 20em;
+.nav-bar {
+
+    /* fixed on top */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    /* background blur */
+    backdrop-filter: blur(3px);
+    background-color: var(--nav-bar-color);
+
+    /* padding and size */
+    padding: 0.5em 1em;
+    height: var(--nav-bar-height);
+    box-sizing: border-box;
+
+    /* bottom border */
+    border-bottom: 1px solid var(--body-color);
+
+    /* flex box - align to right */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.nav-bar a {
+
+    /* font color */
+    color: var(--body-color);
+    transition: color 0.2s;
+
+    /* font */
+    font-size: var(--body-size);
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+
+    /* hover color */
+    color: var(--link-color);
+    transition: color 0.2s;
+}
+
+.nav-bar a::before {
+
+    /* comment styling */
+    content: "//";
+    color: var(--link-color);
+    margin-right: 0.5em;
 }
 
 /* mobile changes */
@@ -64,9 +147,21 @@ p {
 
     .landing {
         
-        /* flex box - stacked vertically */
+        /* flex box - stacked vertically instead */
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+    }
+
+    .landing-logo {
+
+        /* don't float - center instead */
+        float: none;
+    }
+
+    .nav-bar {
+
+        /* flex box - align to center instead */
         justify-content: center;
     }
 }
