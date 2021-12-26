@@ -89,6 +89,7 @@ p {
     /* fit within div */
     width: 100%;
     height: 100%;
+    aspect-ratio: auto;
     object-fit: contain;
 }
 
@@ -317,12 +318,6 @@ a.button-like {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
-    .landing-logo {
-
-        /* don't float - center instead */
-        float: none;
     }
 
     .nav-bar {
