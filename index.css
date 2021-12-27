@@ -151,6 +151,12 @@ a::before {
     margin-right: 0.5em;
 }
 
+a.fragment {
+
+    /* do not display fragments */
+    display: none;
+}
+
 a.fragment::before {
 
     /* do not display on fragments */
