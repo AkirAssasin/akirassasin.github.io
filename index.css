@@ -46,7 +46,6 @@ body
     
     /* Background */
     background-color: var(--background-color);
-
     height: 100%;
 }
 
@@ -236,6 +235,7 @@ a.fragment::before
     /* max width */
     width: 100%;
     max-width: 60em;
+    overflow: hidden;
 }
 
 .project-item
@@ -248,7 +248,6 @@ a.fragment::before
 
     /* max width */
     width: 100%;
-    overflow: hidden;
 
     /* height */
     height: fit-content;
@@ -267,8 +266,12 @@ a.fragment::before
 
 .project-image
 {
+    /* default in front */
+    order: 0;
+    z-index: 1;
+
     /* fill area */
-    flex-grow: 1;
+    flex-grow: 3;
     flex-basis: 0; 
     background-position: center;
     background-size: cover;
@@ -277,17 +280,19 @@ a.fragment::before
 .project-item:nth-child(even) .project-image:first-child,
 .project-item:nth-child(odd) .project-image:last-child
 {
-    /* zig-zag flex pattern */
-    flex-grow: 2;
+    /* move to back */
+    order: 2;
+    z-index: -1;
 }
 
 .project-image:first-child
 {
-    /* render in front */
-    z-index: 1;
+    /* poster-sized */
+    flex-grow: 2;
 }
 
-.project-image:first-child,
+.project-item:nth-child(even) .project-image:last-child,
+.project-item:nth-child(odd) .project-image:first-child,
 .project-item-opener
 {
     /* gradient transition */
@@ -298,6 +303,9 @@ a.fragment::before
 
 .project-item-opener
 {
+    /* center */
+    order: 1;
+
     /* background for description */
     background-color: var(--body-color);
     color: var(--background-color);
@@ -419,12 +427,12 @@ a.button-like
         z-index: 0;
     }
 
-    .project-image:last-child
+    .project-image:first-child
     {
         display: none;
     }
 
-    .project-image:first-child,
+    .project-item:last-child,
     .project-item-opener
     {
         /* disable gradient transition */
