@@ -1,0 +1,12 @@
+/* poster mode: all items open, buttons hidden */
+.project-item .project-item-opener
+{
+    width: var(--project-opener-width);
+}
+.project-item-buttons,
+::-webkit-scrollbar,
+#contact,
+.nav-bar
+{
+    display: none;
+}
