@@ -19,12 +19,12 @@
     --hover-delay: 0.4s;
 
     /* bleeding */
-    --project-gradient-length: 4em;
-    --project-gradient-margin: -4em;
+    --project-gradient-length: 5em;
+    --project-gradient-margin: -5em;
 
     /* opener */
-    --project-opener-width: 30em;
-    --project-desc-width: 20em;
+    --project-opener-width: 40em;
+    --project-desc-width: 30em;
 }
 
 .given-name
@@ -79,9 +79,6 @@ p
 
 .section
 {
-    /* bottom border */
-    border-bottom: 1px dashed var(--translucent-body-color);
-
     /* don't overlap with nav-bar when scrolled to top */
     padding-top: var(--nav-bar-height);
     box-sizing: border-box;
@@ -251,6 +248,7 @@ a.fragment::before
 
     /* max width */
     width: 100%;
+    overflow: hidden;
 
     /* height */
     height: fit-content;
@@ -273,6 +271,14 @@ a.fragment::before
     flex-grow: 1;
     flex-basis: 0; 
     background-position: center;
+    background-size: cover;
+}
+
+.project-item:nth-child(even) .project-image:first-child,
+.project-item:nth-child(odd) .project-image:last-child
+{
+    /* zig-zag flex pattern */
+    flex-grow: 2;
 }
 
 .project-image:first-child
@@ -366,7 +372,7 @@ a.button-like
 }
 
 /* mobile changes */
-@media (max-width: var(--project-opener-width))
+@media (max-width: 600px)
 {
     h1, h2
     {
@@ -395,7 +401,7 @@ a.button-like
 }
 
 /* project list changes */
-@media (max-width: 600px)
+@media (max-width: 40em)
 {
     .project-item
     {
