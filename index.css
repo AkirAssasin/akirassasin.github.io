@@ -1,5 +1,5 @@
-:root {
-
+:root
+{
     /* color constants */
     --body-color: #444444;
     --background-color: #eeeeee;
@@ -19,8 +19,8 @@
     --hover-delay: 0.4s;
 }
 
-body {
-    
+body
+{
     /* font */
     font-family: 'Lato', sans-serif;
     font-size: var(--body-size);
@@ -37,12 +37,13 @@ body {
     height: 100%;
 }
 
-p {
+p
+{
     line-height: 1.2;
 }
 
-.section {
-
+.section
+{
     /* bottom border */
     border-bottom: 1px dashed var(--translucent-body-color);
 
@@ -51,15 +52,15 @@ p {
     box-sizing: border-box;
 }
 
-.viewporter {
-
+.viewporter
+{
     /* take up at least one viewport's worth of space */
     width: 100%;
     min-height: 100vh;
 }
 
-.landing {
-
+.landing
+{
     /* at most one viewport's worth of space */
     max-height: 100vh;
 
@@ -70,8 +71,8 @@ p {
     justify-content: center;
 }
 
-.landing-element {
-
+.landing-element
+{
     /* padding */
     padding: 0.5em 2em;
 
@@ -84,8 +85,8 @@ p {
     max-width: 20em;
 }
 
-.landing-logo {
-
+.landing-logo
+{
     /* fit within div */
     width: 100%;
     height: 100%;
@@ -93,8 +94,8 @@ p {
     object-fit: contain;
 }
 
-.nav-bar {
-
+.nav-bar
+{
     /* fixed on top */
     position: fixed;
     top: 0;
@@ -120,8 +121,8 @@ p {
     gap: 1em;
 }
 
-a {
-
+a
+{
     /* transitions */
     transition: var(--hover-delay);
 
@@ -136,35 +137,35 @@ a {
     display: inline-block;
 }
 
-a:hover {
-
+a:hover
+{
     /* hover color */
     color: var(--link-color);
     transform: scale(1.05);
 }
 
-a::before {
-
+a::before
+{
     /* comment styling */
     content: "//";
     color: var(--link-color);
     margin-right: 0.5em;
 }
 
-a.fragment {
-
+a.fragment
+{
     /* do not display fragments */
     display: none;
 }
 
-a.fragment::before {
-
+a.fragment::before
+{
     /* do not display on fragments */
     content: none;
 }
 
-.viewporter.with-header {
-
+.viewporter.with-header
+{
     /* flex box to make list fill remaining space */
     display: flex;
     flex-direction: column;
@@ -175,20 +176,20 @@ a.fragment::before {
     padding-right: 40px;
 }
 
-.viewporter-header {
-
+.viewporter-header
+{
     /* don't shrink or grow */
     flex: 0 0;
 }
 
-.viewporter-remaining {
-
+.viewporter-remaining
+{
     /* grow all the way */
     flex: 1 0;
 }
 
-.project-list {
-
+.project-list
+{
     /* flex box */
     display: flex;
     flex-direction: row;
@@ -203,8 +204,8 @@ a.fragment::before {
     width: fit-content;
 }
 
-.project-item {
-    
+.project-item
+{
     /* background is image */
     background-size: cover;
     background-position: center;
@@ -214,8 +215,8 @@ a.fragment::before {
     max-width: 20em;
 }
 
-.project-item-desc {
-
+.project-item-desc
+{
     /* colors */
     background-image: linear-gradient(transparent, var(--translucent-body-color), var(--body-color));
     backdrop-filter: blur(2px);
@@ -240,28 +241,37 @@ a.fragment::before {
     justify-content: flex-end;
 }
 
-.project-item-desc h2 {
+h1
+{
+    /* remove margins */
+    margin: 0;
 
-    /* remove bottom margin */
-    margin-bottom: 0;
+    /* font style */
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 
-.project-item-desc p {
+h2
+{
+    /* remove margins */
+    margin: 0;
 
-    /* remove top margin */
-    margin-top: 0;
+    /* font style */
+    font-weight: normal;
+    font-size: 18px;
+    opacity: 0.8;
 }
 
-.project-item-desc:hover {
-
+.project-item-desc:hover
+{
     /* appear on hover */
     opacity: 1;
 }
 
 .project-item-buttons a, 
 .contact-buttons-list a,
-a.button-like {
-
+a.button-like
+{
     /* background */
     background-color: var(--background-color);
 
@@ -274,16 +284,16 @@ a.button-like {
     padding: 0.3em 1em 0.3em 0.5em;
 }
 
-.contact-buttons-list a {
-
+.contact-buttons-list a
+{
     display: inline-block;
     width: initial;
 }
 
-.contact-details {
-
+.contact-details
+{
     /* center */
-    margin: 0 auto;
+    margin: 1em auto;
 
     /* padding */
     padding-left: 40px;
@@ -295,8 +305,8 @@ a.button-like {
     max-width: 650px;
 }
 
-.contact-buttons-list {
-
+.contact-buttons-list
+{
     /* center */
     margin: 0 auto;
 
@@ -316,40 +326,45 @@ a.button-like {
 }
 
 /* mobile changes */
-@media (max-width: 600px) {
+@media (max-width: 600px)
+{
+    h1, h2
+    {
+        text-align: center;
+    }
 
-    .landing {
-        
+    .landing
+    {    
         /* flex box - stacked vertically instead */
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .nav-bar {
-
+    .nav-bar
+    {
         /* flex box - align to center instead */
         justify-content: center;
     }
 
-    .project-item-desc {
-
+    .project-item-desc
+    {
         /* always visible instead of on hover */
         opacity: 1;
     }
 }
 
 /* project list changes */
-@media (max-width: 900px) {
-
-    .project-list {
-
+@media (max-width: 900px)
+{
+    .project-list
+    {
         /* projects stacked vertically instead */
         flex-direction: column;
     }
 
-    .project-item {
-    
+    .project-item
+    {
         /* no max width */
         width: 100%;
         max-width: initial;
