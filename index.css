@@ -297,8 +297,8 @@ a.fragment::before
 {
     /* gradient transition */
     margin: 0 var(--project-gradient-margin) 0 0;
-    mask: linear-gradient(to left, transparent, black var(--project-gradient-length));
     -webkit-mask: linear-gradient(to left, transparent, black var(--project-gradient-length));
+    mask: linear-gradient(to left, transparent, black var(--project-gradient-length));
 }
 
 .project-item-opener
@@ -414,6 +414,7 @@ a.button-like
     .project-item
     {
         /* column mode */
+        display: block;
         position: relative;
         flex-direction: column;
         height: 80vh;
@@ -421,24 +422,21 @@ a.button-like
 
     .project-image
     {
-        /* fill area */
-        transition: none;
+        /* fill top area */
         width: 100%;
         z-index: 0;
+        height: 50%;
+
+        /* disable gradient transition */
+        margin: 0;
+        -webkit-mask: none!important;
+        mask: none!important;
     }
 
     .project-image:first-child
     {
+        /* hide poster */
         display: none;
-    }
-
-    .project-item:last-child,
-    .project-item-opener
-    {
-        /* disable gradient transition */
-        margin: 0;
-        mask: none;
-        -webkit-mask: none;
     }
 
     .project-item:hover .project-item-opener,
@@ -456,7 +454,9 @@ a.button-like
         position: absolute;
         bottom: 0;
         height: 100%;
-        background: linear-gradient(transparent, var(--translucent-body-color), var(--body-color));
+
+        -webkit-mask: linear-gradient(transparent, black, black);
+        mask: linear-gradient(transparent, black, black);
     }
 
     .project-item-desc
