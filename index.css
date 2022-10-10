@@ -20,7 +20,6 @@
 
     /* bleeding */
     --project-gradient-length: 5em;
-    --project-gradient-margin: -5em;
 
     /* opener */
     --project-opener-width: 40em;
@@ -296,7 +295,7 @@ a.fragment::before
 .project-item-opener
 {
     /* gradient transition */
-    margin: 0 var(--project-gradient-margin) 0 0;
+    margin: 0 calc(var(--project-gradient-length) * -1) 0 0;
     -webkit-mask: linear-gradient(to left, transparent, black var(--project-gradient-length));
     mask: linear-gradient(to left, transparent, black var(--project-gradient-length));
 }
