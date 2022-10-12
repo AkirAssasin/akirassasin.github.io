@@ -234,7 +234,6 @@ a.fragment::before
     /* max width */
     width: 100%;
     max-width: 60em;
-    overflow: hidden;
 }
 
 .project-item
@@ -247,9 +246,14 @@ a.fragment::before
 
     /* max width */
     width: 100%;
+    overflow: hidden;
 
     /* height */
     height: fit-content;
+
+    /* outline */
+    outline: var(--link-color) solid 1px;
+    outline-offset: 2px;
 }
 
 .project-item-desc
@@ -417,6 +421,9 @@ a.button-like
         position: relative;
         flex-direction: column;
         height: 80vh;
+
+        /* no outline */
+        outline: none;
     }
 
     .project-image
