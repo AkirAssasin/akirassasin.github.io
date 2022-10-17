@@ -285,7 +285,6 @@ a.fragment::before
 {
     /* move to back */
     order: 2;
-    z-index: -1;
 }
 
 .project-image:first-child
@@ -295,13 +294,21 @@ a.fragment::before
 }
 
 .project-item:nth-child(even) .project-image:last-child,
-.project-item:nth-child(odd) .project-image:first-child,
-.project-item-opener
+.project-item:nth-child(odd) .project-image:first-child
 {
-    /* gradient transition */
+    /* gradient transition to the right */
     margin: 0 calc(var(--project-gradient-length) * -1) 0 0;
     -webkit-mask: linear-gradient(to left, transparent, black var(--project-gradient-length));
     mask: linear-gradient(to left, transparent, black var(--project-gradient-length));
+}
+
+.project-item:nth-child(even) .project-image:first-child,
+.project-item:nth-child(odd) .project-image:last-child
+{
+    /* gradient transition to the left */
+    margin: 0 0 0 calc(var(--project-gradient-length) * -1);
+    -webkit-mask: linear-gradient(to right, transparent, black var(--project-gradient-length));
+    mask: linear-gradient(to right, transparent, black var(--project-gradient-length));
 }
 
 .project-item-opener
@@ -309,8 +316,7 @@ a.fragment::before
     /* center */
     order: 1;
 
-    /* background for description */
-    background-color: var(--body-color);
+    /* text */
     color: var(--background-color);
     height: fit-content;
 
@@ -428,15 +434,15 @@ a.button-like
 
     .project-image
     {
+        /* top-down gradient transition */
+        margin: 0!important;
+        -webkit-mask: linear-gradient(to bottom, black, transparent)!important;
+        mask: linear-gradient(to bottom, black, transparent)!important;
+
         /* fill top area */
         width: 100%;
         z-index: 0;
-        height: 50%;
-
-        /* disable gradient transition */
-        margin: 0;
-        -webkit-mask: none!important;
-        mask: none!important;
+        height: 60%;
     }
 
     .project-image:first-child
@@ -460,9 +466,6 @@ a.button-like
         position: absolute;
         bottom: 0;
         height: 100%;
-
-        -webkit-mask: linear-gradient(transparent, black, black);
-        mask: linear-gradient(transparent, black, black);
     }
 
     .project-item-desc
