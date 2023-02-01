@@ -261,6 +261,7 @@ a.fragment::before
     /* sizing */
     height: fit-content;
     width: var(--project-desc-width);
+    box-sizing: border-box;
 
     /* center in opener */
     margin: 0 auto;
@@ -471,6 +472,7 @@ a.button-like
     .project-item-desc
     {
         /* stack on image */
+        box-sizing: content-box;
         position: absolute;
         bottom: 0;
         width: 90%;
